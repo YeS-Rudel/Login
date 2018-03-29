@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "HelloViewController.h"
 #import "SignUpViewController.h"
+#import "RegistratedPersons.h"
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;

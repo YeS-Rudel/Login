@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -226,7 +226,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="wgq-Cx-mBT">
             <objects>
-                <viewController storyboardIdentifier="SignUpSBID" id="S7P-CV-8XV" customClass="SignUpViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpSBID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S7P-CV-8XV" customClass="SignUpViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbz-hi-Cgl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -245,7 +245,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXy-uN-gsL">
                                 <rect key="frame" x="20" y="331" width="250" height="30"/>
@@ -255,7 +255,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="yes" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iBm-Ev-s3a">
                                 <rect key="frame" x="20" y="241" width="250" height="30"/>
@@ -265,7 +265,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите пароль для регистрации:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ8-9j-IFC">
                                 <rect key="frame" x="20" y="201" width="273" height="20"/>
@@ -298,6 +298,7 @@
                                 <state key="normal" title="Button" image="Then"/>
                                 <connections>
                                     <action selector="nextButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8W-o9-rbA"/>
+                                    <action selector="nextButtonPressed:" destination="S7P-CV-8XV" eventType="touchUpInside" id="lwd-Tm-cax"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите ваш e-mail (логин):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYW-hV-pbN">
@@ -333,6 +334,11 @@
                         <viewLayoutGuide key="safeArea" id="NRy-vE-yt1"/>
                     </view>
                     <navigationItem key="navigationItem" id="EQ0-lj-ZeH"/>
+                    <connections>
+                        <outlet property="registrationCheckPasswordTextField" destination="VXy-uN-gsL" id="skU-2v-z05"/>
+                        <outlet property="registrationLoginTextField" destination="CHN-kT-Qut" id="FGX-4j-fM6"/>
+                        <outlet property="registrationPasswordTextField" destination="iBm-Ev-s3a" id="ECf-mR-FiE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="us3-sf-ySd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -341,7 +347,7 @@
         <!--Hello View Controller-->
         <scene sceneID="0vK-xy-JRh">
             <objects>
-                <viewController storyboardIdentifier="HelloSBID" id="Zbu-Zp-Zt2" customClass="HelloViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HelloSBID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zbu-Zp-Zt2" customClass="HelloViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PCe-gJ-1dg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

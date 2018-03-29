@@ -15,6 +15,7 @@
 		99C651E920692AD600406D93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C651E820692AD600406D93 /* main.m */; };
 		99C651F1206BF86800406D93 /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C651F0206BF86800406D93 /* HelloViewController.m */; };
 		99C651F4206D18FD00406D93 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C651F3206D18FD00406D93 /* SignUpViewController.m */; };
+		99C651F7206D2D3100406D93 /* RegistratedPersons.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C651F6206D2D3100406D93 /* RegistratedPersons.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		99C651F0206BF86800406D93 /* HelloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
 		99C651F2206D18FD00406D93 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		99C651F3206D18FD00406D93 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		99C651F5206D2D3100406D93 /* RegistratedPersons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistratedPersons.h; sourceTree = "<group>"; };
+		99C651F6206D2D3100406D93 /* RegistratedPersons.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistratedPersons.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 			children = (
 				99C651D920692AD600406D93 /* AppDelegate.h */,
 				99C651DA20692AD600406D93 /* AppDelegate.m */,
+				99C651F5206D2D3100406D93 /* RegistratedPersons.h */,
+				99C651F6206D2D3100406D93 /* RegistratedPersons.m */,
 				99C651DC20692AD600406D93 /* ViewController.h */,
 				99C651DD20692AD600406D93 /* ViewController.m */,
 				99C651F2206D18FD00406D93 /* SignUpViewController.h */,
@@ -153,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99C651DE20692AD600406D93 /* ViewController.m in Sources */,
+				99C651F7206D2D3100406D93 /* RegistratedPersons.m in Sources */,
 				99C651F4206D18FD00406D93 /* SignUpViewController.m in Sources */,
 				99C651E920692AD600406D93 /* main.m in Sources */,
 				99C651DB20692AD600406D93 /* AppDelegate.m in Sources */,
