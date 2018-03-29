@@ -13,6 +13,7 @@
 		99C651E320692AD600406D93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99C651E220692AD600406D93 /* Assets.xcassets */; };
 		99C651E620692AD600406D93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99C651E420692AD600406D93 /* LaunchScreen.storyboard */; };
 		99C651E920692AD600406D93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C651E820692AD600406D93 /* main.m */; };
+		99C651F1206BF86800406D93 /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99C651F0206BF86800406D93 /* HelloViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		99C651E520692AD600406D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99C651E720692AD600406D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99C651E820692AD600406D93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99C651EF206BF86800406D93 /* HelloViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloViewController.h; sourceTree = "<group>"; };
+		99C651F0206BF86800406D93 /* HelloViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				99C651DA20692AD600406D93 /* AppDelegate.m */,
 				99C651DC20692AD600406D93 /* ViewController.h */,
 				99C651DD20692AD600406D93 /* ViewController.m */,
+				99C651EF206BF86800406D93 /* HelloViewController.h */,
+				99C651F0206BF86800406D93 /* HelloViewController.m */,
 				99C651DF20692AD600406D93 /* Main.storyboard */,
 				99C651E220692AD600406D93 /* Assets.xcassets */,
 				99C651E420692AD600406D93 /* LaunchScreen.storyboard */,
@@ -145,6 +150,7 @@
 				99C651DE20692AD600406D93 /* ViewController.m in Sources */,
 				99C651E920692AD600406D93 /* main.m in Sources */,
 				99C651DB20692AD600406D93 /* AppDelegate.m in Sources */,
+				99C651F1206BF86800406D93 /* HelloViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
