@@ -8,27 +8,44 @@
 
 #import "ViewController.h"
 #import "HelloViewController.h"
+#import "SignUpViewController.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
+
 @property (weak, nonatomic) IBOutlet UIButton *facebookButton;
 
 @property (weak,nonatomic) IBOutlet UIButton *googleLoginButton;
+
+@property (weak, nonatomic) IBOutlet UIImageView *loginImageView;
 @property (weak,nonatomic) IBOutlet UITextField *loginTextField;
+
+@property (weak, nonatomic) IBOutlet UIImageView *passwordImageView;
 @property (weak,nonatomic) IBOutlet UITextField *passwordTextField;
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedController;
 
+@property (weak, nonatomic) IBOutlet UILabel *orLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *forgetButton;
 
-
-
-
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 @end
 
 @implementation ViewController
 
+
+
+//-(void) hiddenSignUpButton{
+//    [self.forgetButton setHidden:!self.forgetButton.isHidden];
+//}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (IBAction)forgoPasswordPressed:(UIButton *)sender {
@@ -76,18 +93,34 @@
         
         [self.navigationController pushViewController:vc animated:YES];
         }
-        
-        
     }];
-    
     [allertController addAction:okAktion];
-    
     [self presentViewController:allertController animated:YES completion:nil];
-    
 }
 
 - (IBAction)segmentedControllerValueChange:(UISegmentedControl *)sender {
+    
+    [self.facebookButton setHidden:!self.facebookButton.isHidden];
+    [self.googleLoginButton setHidden:!self.googleLoginButton.isHidden];
+    [self.loginTextField setHidden:!self.loginTextField.isHidden];
+    [self.passwordTextField setHidden:!self.passwordTextField.isHidden];
+    [self.orLabel setHidden:!self.orLabel.isHidden];
+    [self.loginImageView setHidden:!self.loginImageView.isHidden];
+    [self.passwordImageView setHidden:!self.passwordImageView.isHidden];
+    [self.forgetButton setHidden:!self.forgetButton.isHidden];
+    [self.signUpButton setHidden:!self.signUpButton.isHidden];
 }
+
+- (IBAction)signUpPressed:(UIButton *)sender {
+    
+    UIStoryboard *sb =[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    
+    SignUpViewController *vc = [sb instantiateViewControllerWithIdentifier:@"SignUpSBID"];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
 
 
 @end
